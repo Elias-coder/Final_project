@@ -1,0 +1,29 @@
+[debug] [2023-07-10T09:02:21.854Z] ----------------------------------------------------------------------
+[debug] [2023-07-10T09:02:21.855Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\elias\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-10T09:02:21.856Z] CLI Version:   12.4.3
+[debug] [2023-07-10T09:02:21.856Z] Platform:      win32
+[debug] [2023-07-10T09:02:21.856Z] Node Version:  v19.9.0
+[debug] [2023-07-10T09:02:21.856Z] Time:          Mon Jul 10 2023 11:02:21 GMT+0200 (South Africa Standard Time)
+[debug] [2023-07-10T09:02:21.856Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-10T09:02:21.861Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-10T09:02:21.861Z] > authorizing via signed-in user (eliasmabena12@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\elias\Desktop\Fruits_classification\fruit_classification
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 

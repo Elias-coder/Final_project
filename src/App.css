@@ -1,0 +1,470 @@
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834)
+      url(../public/Images/3d6aa9082f3c9e285df9970dc7b762ac.gif) center
+      no-repeat;
+  z-index: 1;
+}
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background:  rgb(87, 163, 238);
+  z-index: 1000;
+  box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.444);
+  -webkit-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.475);
+  -moz-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.474);
+}
+nav div{
+  padding: 20px;
+}
+nav div p{
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-family: fantasy;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+nav .circle div{
+  position: relative;
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+nav .circle div img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#body-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Drop */
+#mid{
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+}
+#mid .left-side{
+  position: relative;
+  width: 30%;
+}
+.card{
+  width: 400px;
+  height: auto;
+  margin-left: 8px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.card .top{
+  text-align: center;
+}
+.card p{
+  font-weight: bold;
+  color: #0086fe;
+}
+.card .upload{
+  outline: 0;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 8px 13px;
+  width: 100%;
+  background: #0086fe;
+}
+.card .drag-area{
+  height: 150px;
+  border-radius: 5px;
+  border: 2px dashed #0086fe;
+  color: #0086fe;
+  background: #f4f3f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 10px;
+}
+.card .drag-area .visible{
+  font-size: 18px;
+}
+.card select{
+  color: #0086fe;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card .container{
+  position: relative;
+  height: 150px;
+   max-height: 200px;
+   overflow-y: auto;
+   margin: 15px 0;
+   padding: 10px 0;
+}
+.card .container .images{
+  width: 150px;
+  margin: 0 auto;
+  position: absolute;
+  left: 25%;
+  display: flex;
+  justify-content: flex-start;
+}
+.card .container .images img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.card .container .images span{
+  position: relative;
+  top: -2px;
+  right: 9px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.card input, .card .drag-area .on-drop, .card .drag-area.dragover .visible{
+  display: none;
+}
+.delete{
+  z-index: 999;
+  color: #0086fe;
+}
+#messages{
+  width: 400px;
+  margin-left: 8px;
+  border-radius: 5px;
+  z-index: 1000;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+#messages h2{
+  padding: 15px;
+  color: rgb(59, 170, 133);
+  font-size: 20px;
+}
+
+#mid .right-side{
+  position: relative;
+  width: 60%;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.container-box{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+}
+.row .col-md-4{
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: .5s;
+}
+.row .col-md-4 span{
+  color: rgb(208, 206, 206);
+  font-size: 20px;
+  font-weight: 800;
+}
+.row .col-md-4 div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.row .col-md-4:hover{
+  cursor: pointer;
+  transform: translateY(-7px);
+}
+.row .green{
+  background: rgb(3, 144, 99);
+}
+.row .blue{
+  background: rgb(2, 94, 159);
+}
+.row .red{
+  background: rgb(136, 28, 8);
+}
+.blank{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.image-bg{
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.image-bg img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 0.3;
+}
+.generate-gragh{
+  position: relative;
+  top: 40%;
+  left: 40%;
+  z-index: 5;
+}
+.btn-finish{
+  margin-top: 20px;
+  background-color: #009866;
+}
+.generate-gragh button{
+  position: relative;
+  padding: 20px 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+  background-color: rgb(37, 141, 91);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #f4f3f9;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.generate-gragh button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* Class Name from Backend */
+.class_Name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.confidence{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.mssg{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.modal-body input{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  outline: 0;
+
+}
+.modal-body textarea{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  height: 100px;
+  resize: none;
+}
+.modal-body input:focus{
+  border: 2px solid rgb(0, 213, 255);
+}
+
+.count-price{
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+  padding: 30px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.multiplier .col p{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+table{
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    #mid{
+      display: flex;
+      flex-direction: column;
+    }
+    #mid .left-side{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .card{
+      width: 300px;
+      padding: 15px 20px;
+    }
+    .card .container .images{
+      width: 100px;
+    }
+    .card .container{
+      position: relative;
+      height: 120px;
+    }
+    #messages{
+      width: 300px;
+    }
+    #messages h2{
+      font-size: 16px;
+    }
+
+
+    #mid .right-side{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container-box{
+      width: 300px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+    .row{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .row .col-md-4{
+      position: relative;
+      width: 90%;
+      height: 150px;
+    }
+    .row .col-md-4 span{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .count-price{
+      position: relative;
+      width: 300px;
+      margin: 15px 0;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .count-price .col{
+      margin: 10px 0;
+    }
+    .count-price .col strong{
+      font-size: 14px;
+    }
+    .image-bg{
+      width: 350px;
+      overflow-x: scroll;
+    }
+    .image-bg img{
+      position: fixed;
+    }
+    table th{
+      font-size: 12px;
+    }
+    .modal-dialog{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content{
+      width: 250px;
+    }
+
+}
